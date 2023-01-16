@@ -1,0 +1,215 @@
+/* google reset */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;1,300;1,400&display=swap');
+/* variables */
+:root {
+    --primary-color: #278EA5;
+    --secondary-color:yellow;
+}
+/* CSS RESET */
+* {
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    font-family:'Poppins', sans-serif;
+    line-height: 1.54;
+    text-align: center;
+}
+img{
+    width: 100%;
+    display: block;
+}
+.container {
+    max-width: 1200px;
+    padding: 0 1.5rem;
+    margin:auto;
+    overflow: hidden;
+}
+.btn {
+    text-align: center;
+    text-decoration: none;
+    font-size: 1.3rem;
+    font-weight: 700;
+    color: #fff;
+    display: inline-block;
+    padding: .6rem 1.5rem;
+    background-color: #444;
+    margin-top: 4rem;
+    transition: all .5s ease-in-out;
+}
+.btn:hover {
+    background-color: #54B435;
+}
+#about{
+   height:100vh;
+   background-color:#071E4D;
+   font-size: 2rem;
+   text-decoration: double;
+}
+#navbar {
+    background-color:var(--primary-color);
+    color:black;
+    padding: 0rem 3rem;
+    display: flex;
+    justify-content: flex-end;
+    position: fixed;
+    width: 100vw;
+}
+#navbar ul {
+    list-style: none;
+    display: flex;
+}
+#navbar ul a {
+    display: inline-block;
+    padding: 1.2rem 2rem;
+    text-decoration: none;
+    color: black;
+    font-size: 1.4rem;
+    font-weight: 500;
+}
+#navbar ul a:hover {
+    background-color:#A10035;
+}
+#about .container {
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+#title {
+    color:#fff;
+    font-size: 3.6rem;
+    font-weight: 700;
+    line-height: 1.2;
+    margin-bottom: 1rem;
+}
+.lead{
+    font-size: 1.8rem;
+    color: #fff;
+    font-weight: 700;
+}
+#work {
+    text-align: center;
+    width: 100%;
+    padding: 7rem 0.1rem;
+    background-color: #6A759B;
+}
+#work .projects {
+    display: grid;
+    grid-row-gap: 3rem;
+    grid-template-columns: repeat(3, 1fr);
+    grid-column-gap: 2rem;
+    margin-top: 2rem;
+    justify-content: center;
+}
+
+#work .container > h1 {
+    font-size: 2.6rem;
+    color: #21273D;
+    font-weight: bolder;
+    margin-bottom: 6rem;
+    line-height: 1.2;
+}
+.bottom-line {
+   height: 6px;
+   background-color: #fff;
+   width: 55%;
+   border-radius:10px;
+   display: block;
+   margin: auto;
+   margin-bottom: 3rem;
+}
+#work .projects-grid {
+    background-color:#B9D4F1;
+}
+#work .projects-grid a {
+    display: inline-block;
+    cursor: pointer;
+    text-decoration: none;
+}
+#work .projects-grid a p {
+    padding: 1rem;
+    font-size: 1.4rem;
+    font-weight: 700;
+    text-align: center;
+    color:black;
+}
+.code {
+  transition: color 0.5s all ease;
+  font-size: 1rem;
+}
+#work .projects-grid:hover .code {
+    color:red;
+}
+#contact {
+    height:80vh;
+    background-color: #BEAEE2;
+    color:#fff;
+}
+#contact .container{
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  text-decoration: inherit;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+}
+#contact .container h1 {
+    font-size: 3.4rem;
+    font-weight: bolder;
+    padding-bottom: .1rem;
+    color:black;
+    line-height: 1.2;
+}
+#contact .container p {
+    font-size: 1rem;
+    font-weight: 700;
+    margin-bottom: 3rem;
+    color:black;
+}
+#contact .container .social > div a {
+    text-decoration: none;
+    display: inline-block;
+    width:3%;
+    height:3%;
+    font-size: 1.5rem;
+    color:black;
+    margin: 1rem 2rem;
+    font-weight: bolder;
+    transition: transform.5s;
+}
+#contact .container .social > div a:hover {
+    transform: translateY(-12px);
+}
+#main-footer{
+    border-top:solid 4px var(--primary-color);
+    padding: 1rem;
+    background-color: #BEAEE2;
+    color: #fff;
+}
+#main-footer .container{
+    padding: 1rem 0rem;
+    display: flex;
+    justify-content: space-between;
+}
+#main-footer .container p{
+    font-size: 1.2rem;
+}
+#main-footer #creator a {
+    text-decoration: underline;
+    color:black;
+    line-height: 1.5;
+}
+@media(max-width:600px) {
+    #navbar {
+        padding:0rem 1rem;
+        justify-content: center;
+    }
+    #work .projects {
+        grid-template-columns: repeat(1, 1fr);
+    }
+}
+

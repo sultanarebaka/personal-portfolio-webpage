@@ -2,7 +2,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;1,300;1,400&display=swap');
 /* variables */
 :root {
-    --primary-color: #278EA5;
+    --primary-color: #C0EEE4;
     --secondary-color:yellow;
 }
 /* CSS RESET */
@@ -32,7 +32,7 @@ img{
 }
 #about{
    height:100vh;
-   background-color:#071E4D;
+   background-color:#F8F988;
    font-size: 2rem;
 }
 #navbar {
@@ -46,7 +46,6 @@ img{
     top: 0;
 	left: 0;
 	right: 0;
-	box-shadow: 0px 1px 3px black;
 }
 #navbar ul {
     list-style: none;
@@ -61,7 +60,7 @@ img{
     font-weight: 500;
 }
 #navbar ul a:hover {
-    background-color:#A10035;
+    background-color:#54B435;
 }
 #about .container {
     height: 100%;
@@ -71,7 +70,7 @@ img{
     flex-direction: column;
 }
 #title {
-    color:#fff;
+    color:black;
     font-size: 3.6rem;
     font-weight: 700;
     line-height: 1.2;
@@ -79,7 +78,7 @@ img{
 }
 .lead{
     font-size: 1.8rem;
-    color: #fff;
+    color: black;
     font-weight: 700;
     margin:0;
 }
@@ -88,7 +87,7 @@ img{
     padding: 4rem 2rem;
     font-size: .9rem;
     font-weight: bold;
-    background: yellowgreen;
+    background: #FFCAC8;
   } 
 .projects-section-header {
     max-width: 640px;
@@ -97,9 +96,9 @@ img{
     margin: 0 auto 6rem auto;
     border-bottom: 0.2rem solid black;
   }
-  @media (max-width: 28.75em) {
-    .projects-section-header {
-        font-size: 4rem;
+@media (max-width: 28.75em) {
+  .projects-section-header {
+    font-size: 4rem;
       }
     }
   /* "Automagic" image grid using no media queries */
@@ -160,63 +159,72 @@ img{
  }
   /* Contact section */
 #contact {
-    height:70vh;
     width:100%;
     margin: 0;
     text-align: center;
     display: flex;
     flex-direction: column;
     align-items: center;
+    height: 80vh;
     justify-content:center;
-    background-color: #BEAEE2;
+    background-color: #FF9E9E;
     color:#fff;
 }
-#contact .container h3 {
-    font-size: 3.4rem;
+#contact h3 {
+    font-size: 3.2rem;
     font-weight: bold;
+    padding: 0 3rem;
+    padding-top: 105px;
+    padding-bottom: .1rem;
     color:black;
     line-height: 1;
 }
-.contact-section-header > h2 {
-  font-size: 6rem;
-}
-
 @media (max-width: 28.75em) {
-  .contact-section-header > h2 {
+  .contact > h3 {
     font-size: 4rem;
   }
 }
-#contact .container p {
+#contact p {
  font-size: 1.7rem;
   font-weight: 700;
+  margin-bottom: 2.5rem;
   font-style: italic;
   color:black;
 }
-.contact-links {
-  display: flex;
-  justify-content: center;
-  width: 100%;
-  max-width: 980px;
-  flex-wrap: wrap;
-}
-.contact-details {
-  font-size: 2.4rem;
+.fab,.fas {
   color: black;
-  display: block;
-  font-weight: bold;
-  padding:0 8px;
-  margin-bottom: 9rem;
-  transition: transform 0.3s;
+  padding-left: 1rem;
 }
-.contact-details:hover {
-  transform: translateY(8px);
+.btn-contact{
+  color: black;
+  font-size: 2em;
+  display: inline-block;
+  text-decoration: none;
+  font-weight: bold;
+  transition: transform 0.2s ease-out;
+}
+@media (max-width:950px){
+  .btn-contact{
+    font-size:1.6em;
+  }
+}
+@media (max-width:640px){
+  .btn-contact{
+    font-size:1.4em;
+  }
+}
+.btn-contact:hover {
+  transform: translateY(7px);
+}
+#contact-options{
+  margin-top: 56px;
 }
 #footer{
   height:9vh ;
   font-weight: 300;
   display: flex;
   justify-content: space-evenly;
-  background-color: #BEAEE2;
+  background-color: #FF9E9E;
   padding-bottom:2rem;
   color:black;
   border-top:solid 4px var(--primary-color);
@@ -241,5 +249,5 @@ img{
 @media(max-width:400px){
   #copyright{
   font-size: .8em;
-  }
+}
 }

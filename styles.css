@@ -32,8 +32,6 @@ img{
     overflow: hidden;
 }
 #about{
-  width: 100%;
-  height: 100vh;
    background-color:#F8F988;
    display: flex;
    flex-direction: column;

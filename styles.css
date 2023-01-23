@@ -10,6 +10,7 @@
     margin:0;
     padding: 0;
     box-sizing: border-box;
+    scroll-behavior:smooth;
 }
 a{
     text-decoration: none;
@@ -60,7 +61,7 @@ img{
     font-weight: 500;
 }
 #navbar ul a:hover {
-    background-color:#54B435;
+    background-color:#FF9E9E;
 }
 #about .container {
     height: 100%;
@@ -129,7 +130,7 @@ img{
     transition: color 0.3s ease-in-out;
   }
 .project:hover .code {
-    color: #ff7f50;
+    color: yellow;
   }
 .project-image {
     height: calc(100% - 6.8rem);
@@ -155,7 +156,7 @@ img{
   transition: all .5s ease-in-out;
  }
  .btn:hover {
-     background-color: #54B435;
+     background-color: #FF9E9E;
  }
   /* Contact section */
 #contact {
